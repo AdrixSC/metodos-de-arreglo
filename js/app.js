@@ -1,5 +1,5 @@
 /////////////////////  FOREACH  ////////////////////////////
-var numbers = [1, 2, 3, 4];
+var numbers = [1, 2, 3, 4];//variable para todas las funciones(excepto para sort);
 
 function myForEach(array) {
     for (var i = 0; i > numbers.lenght; i++) {
@@ -24,7 +24,6 @@ function myMap(array) {
         numDuplicate[i] = numbers[i] * numbers[i]
     };
     console.log(numDuplicate);
-
 };
 
 myMap(numbers);
@@ -65,11 +64,13 @@ var arrayOrganized = [];
 
 function mySort(array) {
     for (var i = 1; i < letters.length; i++) {
+      console.log("indice i", letters.length);
         for (var j = 0; j < (letters.length - i); j++) {
-            if (letters[j] > letters[j + 1]) {
+          console.log("indice j", letters.length - i);
+           if (letters[j] > letters[j + 1]) {
                 k = letters[j + 1];
                 letters[j + 1] = letters[j];
-                letters[j] = k;
+                letters[j] = k
             };
         };
     };
